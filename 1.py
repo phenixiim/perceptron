@@ -34,7 +34,6 @@ class Perceptron:
                 self.weights[index] = weight + newWeightsDelta[index]
             self.bias += error * learning_rate
             # print(self.weights, self.bias)
-            return self.weights, self.bias
 
 
 p = Perceptron(initial_weights=([1]*28**2),initial_bias=0)

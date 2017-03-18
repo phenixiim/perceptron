@@ -39,7 +39,6 @@ class Perceptron:
                 for index, weight in enumerate(list(self.weights)):
                     self.weights[index] = weight + newWeightsDelta[index]
                 self.bias += error * learning_rate
-                return self.weights, self.bias
 
     def trainMeToNumber(self, totalSteps: int, learningSample: int, trainedNumber: int):
         testSample = totalSteps - learningSample
